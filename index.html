@@ -3,412 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
 
-    <style>
+    <title>우리의_서재</title>
 
-        body {
-            margin: 0;
-            color: black;
-            background: white;
-        }
-
-        .wrap {
-            width: 1000px;
-            margin: 0 auto;
-        }
-
-        .top {
-            height: 134px;
-            border-bottom: 2px solid red;
-        }
-
-        .top_menu {
-            height: 45px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            gap: 16px;
-            font-size: 12px;
-        }
-
-        .top_menu a {
-            color: black;
-        }
-
-        .global {
-            border: 0;
-            font-size: 12px;
-            background: white;
-        }
-
-        .header_main {
-            height: 87px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo {
-            width: 132px;
-            height: 28px;
-            background: url("https://www.busanbank.co.kr/resource/img/tit/h1_busanbank_new.png")
-                no-repeat left center;
-            background-size: contain;
-        }
-
-        .main_menu {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-            margin-left: auto;
-        }
-
-        .main_menu a {
-            color: black;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .search_btn,
-        .all_menu {
-            height: 34px;
-            font-size: 12px;
-            cursor: pointer;
-        }
-
-        .search_btn {
-            width: 90px;
-            margin-left: 5px;
-        }
-
-        .all_menu {
-            width: 90px;
-        }
-
-        .banner_area {
-            width: 100%;
-            height: 315px;
-            margin-top: 35px;
-            display: flex;
-            gap: 24px;
-        }
-
-        .banner {
-            width: 792px;
-            height: 280px;
-            position: relative;
-            overflow: hidden;
-            background: lightgoldenrodyellow
-        }
-
-        .banner_text {
-            position: absolute;
-            left: 55px;
-            top: 53px;
-            z-index: 3;
-        }
-
-        .banner_text .small {
-            font-size: 18px;
-            color: gray;
-            margin-bottom: 2px;
-        }
-
-        .banner_text .title {
-            font-size: 30px;
-            font-weight: 800;
-            color: green;
-            letter-spacing: -2px;
-        }
-
-        .banner_text .desc {
-            margin-top: 20px;
-            color: gray;
-            font-size: 15px;
-            line-height: 1.6;
-        }
-
-        .side_buttons {
-            width: 180px;
-            height: 280px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .side_button {
-            height: 87px;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .side_button:nth-child(1) {
-            background: red;
-        }
-
-        .side_button:nth-child(2) {
-            background: gray;
-        }
-
-        .side_button:nth-child(3) {
-            background: teal;
-        }
-
-        .products {
-            width: 1500px;
-            display: flex;
-            justify-content: space-between;
-            margin-top: 10px;
-            /* border: 1px solid black; */
-        }
-
-        .product {
-            width: 180px;
-            text-align: center;
-            position: relative;
-            left: 100px; 
-        }
-
-        .product_icon {
-            width: 72px;
-            height: 72px;
-            margin: 0 auto 20px;
-            position: relative;
-            background-color: tan;
-        }
-
-        .product_title {
-            font-size: 17px;
-            font-weight: bold;
-            margin-bottom: 7px;
-        }
-
-        .product_desc {
-            color: gray;
-            font-size: 14px;
-        }
-
-        .notices{
-            width: 270px;
-            height: 200px;
-            justify-content: space-between;
-            font-size: 17px;
-            font-weight: bold;
-            margin-bottom: 7px;
-            position: relative;
-            top: 180px;
-            left: -790px;
-            /* border: 1px solid black; */
-        }
-        .notice{
-            font-size: 14px;
-            font-weight: normal;
-            color: gray;
-        }
-
-        .events{
-            width: 270px;
-            height: 200px;
-            font-size: 17px;
-            font-weight: bold;
-            margin-bottom: 7px;
-            position: relative;
-            top: -29px;
-            left: -500px;
-            /* border: 1px solid black; */
-        }
-
-        .bottom_buttons{
-            width: 470px;
-            height: 200px;
-            /* border: 1px solid black; */
-            position: relative;
-            top: 180px;
-            right: 500px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .bottom_button{
-            width: 180px;
-            height: 50px;
-            margin: 8px;
-            border: 1px solid black;
-            text-align: center;
-            line-height: 50px;
-            font-size: 14px;
-            flex: 1 1 40%;
-        }
-
-        .bottom_line {
-            width: 100%;
-            border-bottom: 2px solid black;
-            margin-top: 20px;
-        }
-        .letters{
-            margin-top: 20px;
-            flex-wrap: wrap;
-            display: flex;
-            font-size: 14px;
-        }
-        .letter{
-            margin: 5px;
-        }
-        .numbers{
-            display: flex;
-        }
-        .number{
-            margin: 5px;
-            font-weight: bold;
-        }
-       
-    </style>
+    <link rel="stylesheet" href="bookstore_style.css">
 </head>
 
 <body>
+    <header class="header">
 
-<div class="wrap">
+        <div class="header-inner">
 
-    <header class="top">
+            <!-- 왼쪽 메뉴 -->
+            <nav class="main-nav">
+                <!-- 국내 도서 -->
+                <div class="nav-item">
+                    <a href="#">국내 도서</a>
+                    <div class="sub-menu">
+                        <div class="sub-column">
+                            <a href="#">건강 취미</a>
+                            <a href="#">경제 경영</a>
+                            <a href="#">소설</a>
+                            <a href="#">개발 도서</a>
+                            <a href="#">과학</a>
+                        </div>
+                        <div class="sub-column">
+                            <a href="#">건강 취미</a>
+                            <a href="#">경제 경영</a>
+                            <a href="#">소설</a>
+                            <a href="#">개발 도서</a>
+                            <a href="#">과학</a>
+                        </div>
+                        <div class="sub-column">
+                            <a href="#">건강 취미</a>
+                            <a href="#">경제 경영</a>
+                            <a href="#">소설</a>
+                            <a href="#">개발 도서</a>
+                            <a href="#">과학</a>
+                        </div>
 
-        <div class="top_menu">
-            <a>로그인</a>
-            <a>인증센터</a>
-            <a>은행소개</a>
+                    </div>
+                </div>
 
-            <select class="global">
-                <option>Global</option>
-                <option>한국어</option>
-                <option>English</option>
-                <option>日本語</option>
-                <option>中國語</option>
-            </select>
-        </div>
 
-        <div class="header_main">
+                <!-- 외국 도서 -->
+                <div class="nav-item">
+                    <a href="#">외국 도서</a>
+                    <div class="sub-menu">
+                        <div class="sub-column">
+                            <a href="#">건강 취미</a>
+                            <a href="#">경제 경영</a>
+                            <a href="#">소설</a>
+                            <a href="#">개발 도서</a>
+                            <a href="#">과학</a>
+                        </div>
+                        <div class="sub-column">
+                            <a href="#">건강 취미</a>
+                            <a href="#">경제 경영</a>
+                            <a href="#">소설</a>
+                            <a href="#">개발 도서</a>
+                            <a href="#">과학</a>
+                        </div>
+                        <div class="sub-column">
+                            <a href="#">건강 취미</a>
+                            <a href="#">경제 경영</a>
+                            <a href="#">소설</a>
+                            <a href="#">개발 도서</a>
+                            <a href="#">과학</a>
+                        </div>
 
-            <div class="logo"></div>
+                    </div>
+                </div>
 
-            <div class="main_menu">
-                <a>개인뱅킹</a>
-                <a>기업뱅킹</a>
-                <a>금융상품</a>
 
-                <input type="submit" value="검색하기">
-                <input type="submit" value="전체메뉴">
+                <!-- 장르별 -->
+                <div class="nav-item">
+                    <a href="#">장르별</a>
+                    <div class="sub-menu">
+                        <div class="sub-column">
+                            <a href="#">건강 취미</a>
+                            <a href="#">경제 경영</a>
+                            <a href="#">소설</a>
+                            <a href="#">개발 도서</a>
+                            <a href="#">과학</a>
+                        </div>
+                        <div class="sub-column">
+                            <a href="#">건강 취미</a>
+                            <a href="#">경제 경영</a>
+                            <a href="#">소설</a>
+                            <a href="#">개발 도서</a>
+                            <a href="#">과학</a>
+                        </div>
+                        <div class="sub-column">
+                            <a href="#">건강 취미</a>
+                            <a href="#">경제 경영</a>
+                            <a href="#">소설</a>
+                            <a href="#">개발 도서</a>
+                            <a href="#">과학</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 새로 나온 책 -->
+                <div class="nav-item">
+                    <a href="#">새로 나온 책</a>
+                    <div class="sub-menu">
+                        <div class="sub-column">
+                            <a href="#">건강 취미</a>
+                            <a href="#">경제 경영</a>
+                            <a href="#">소설</a>
+                            <a href="#">개발 도서</a>
+                            <a href="#">과학</a>
+                        </div>
+                        <div class="sub-column">
+                            <a href="#">건강 취미</a>
+                            <a href="#">경제 경영</a>
+                            <a href="#">소설</a>
+                            <a href="#">개발 도서</a>
+                            <a href="#">과학</a>
+                        </div>
+                        <div class="sub-column">
+                            <a href="#">건강 취미</a>
+                            <a href="#">경제 경영</a>
+                            <a href="#">소설</a>
+                            <a href="#">개발 도서</a>
+                            <a href="#">과학</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 가격 인하 도서 -->
+                <div class="nav-item">
+                    <a href="#">가격 인하 도서</a>
+                    <div class="sub-menu">
+                        <div class="sub-column">
+                            <a href="#">건강 취미</a>
+                            <a href="#">경제 경영</a>
+                            <a href="#">소설</a>
+                            <a href="#">개발 도서</a>
+                            <a href="#">과학</a>
+                        </div>
+                        <div class="sub-column">
+                            <a href="#">건강 취미</a>
+                            <a href="#">경제 경영</a>
+                            <a href="#">소설</a>
+                            <a href="#">개발 도서</a>
+                            <a href="#">과학</a>
+                        </div>
+                        <div class="sub-column">
+                            <a href="#">건강 취미</a>
+                            <a href="#">경제 경영</a>
+                            <a href="#">소설</a>
+                            <a href="#">개발 도서</a>
+                            <a href="#">과학</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="frame.html">산출물</a>
+                </div>
                 
+            </nav>
+
+
+            <!-- 오른쪽 메뉴 -->
+            <div class="member-nav">
+
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+
             </div>
 
         </div>
 
     </header>
 
-    <div class="banner_area">
-        <div class=" banner">
-        </div>
-        <div class="side_buttons">
-
-            <div class="side_button">
-                빠른조회서비스
+    <main>
+        <section class="hero">
+            <h1><img src="images/book_logo.png" alt=""></h1>
+            <!-- 검색창 -->
+            <div class="search-box">
+                <input type="text" placeholder="영화 [오디세이] 각본집 & 아트북">
+                <button type="submit">검색</button>
             </div>
 
-            <div class="side_button">
-                사고분실신고
+        </section>
+
+        <!-- 국내 인기 도서 -->
+        <section class="book-section">
+            <h2>국내 인기 도서</h2>
+            <div class="book-grid">
+                <a href="bookstore_detail.html" class="book-card">
+                    <img src="images/끝나지 않는 노래.jpg">
+                </a>
+                <a href="#" class="book-card">
+                    <img src="images/단 한 사람.jpg">
+                </a>
+                <a href="#" class="book-card">
+                    <img src="images/당신 옆을 지나간 그 소녀의 이름은.jpg">
+                </a>
+            </div>
+        </section>
+
+        <!-- 외국 인기 도서 -->
+        <section class="book-section second">
+            <h2>외국 인기 도서</h2>
+            <div class="book-grid">
+                <a href="#" class="book-card">
+                    <img src="images/american.jpg">
+                </a>
+                <a href="#" class="book-card">
+                    <img src="images/giver.jpg">
+                </a>
+                <a href="#" class="book-card">
+                    <img src="images/japanese.jpg">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="contact">
+                <p class="footer-title">연락처</p>
+                <p>051-111-2222</p>
+                <p>booksforus@gmail.com</p>
             </div>
 
-            <div class="side_button">
-                금융소비자보호
-            </div>
-
+            <nav class="footer-nav">
+                <a href="#">고객 센터</a>
+                <a href="#">빠른 서비스</a>
+                <a href="#">회사 소개</a>
+            </nav>
         </div>
-
-    </div>
-
-    <div class="products">
-
-        <div class="product">
-            <div class="product_icon"></div>
-            <div class="product_title">베스트상품</div>
-            <div class="product_desc">온라인판매 TOP5</div>
-        </div>
-
-        <div class="product">
-            <div class="product_icon"></div>
-            <div class="product_title">목적별상품</div>
-            <div class="product_desc">상황에 맞는 자금 관리</div>
-        </div>
-
-        <div class="product">
-            <div class="product_icon"></div>
-            <div class="product_title">생애주기별상품</div>
-            <div class="product_desc">청소년기와 함께 해야하는</div>
-        </div>
-
-        <div class="product">
-            <div class="product_icon"></div>
-            <div class="product_title">고객별상품</div>
-            <div class="product_desc">유아기부터 은퇴설계까지</div>
-        </div>
-
-        <div class="product">
-            <div class="product_icon new"></div>
-            <div class="product_title">신규상품</div>
-            <div class="product_desc">최근 6개월이내 출시</div>
-        </div>
-
-        <div>
-            <div class="notices">새소식 > 
-                <div class="notice">많은 관심 부탁드립니다.</div>
-                <div class="notice">많은 관심 부탁드립니다.</div>
-                <div class="notice">많은 관심 부탁드립니다.</div>
-                <div class="notice">많은 관심 부탁드립니다.</div>
-                <div class="notice">많은 관심 부탁드립니다.</div>
-                <div class="notice">많은 관심 부탁드립니다.</div>
-            </div>
-            <div class="events">이벤트 > 
-                <div class="notice">많은 관심 부탁드립니다.</div>
-                <div class="notice">많은 관심 부탁드립니다.</div>
-                <div class="notice">많은 관심 부탁드립니다.</div>
-                <div class="notice">많은 관심 부탁드립니다.</div>
-                <div class="notice">많은 관심 부탁드립니다.</div>
-                <div class="notice">많은 관심 부탁드립니다.</div>
-            </div>
-        </div>
-
-        <div class="bottom_buttons">
-            <div class="bottom_button">상품공시실</div>
-            <div class="bottom_button">서식/약관/자료실</div>
-            <div class="bottom_button">금융소비자보호</div>
-            <div class="bottom_button">고객센터</div>
-            <div class="bottom_button">비교조회서비스</div>
-            <div class="bottom_button">서민금융</div>
-        </div>
-
-    </div>
-    <div class="bottom_line"></div>
-    <div class="letters">
-        <div class="letter">개인정보처리방침</div>
-        <div class="letter">경영공시</div>
-        <div class="letter">고객정보취급방침</div>
-        <div class="letter">보호금융상품등록부</div>
-        <div class="letter">싱품공시실</div>
-        <div class="letter">전자민원접수</div>
-        <div class="letter">전자금융이용자보호수칙</div>
-        <div class="letter">전자금융이용자보호수칙</div>
-        <div class="letter">전자금융사기피해금환급제도</div>
-        <div class="letter">위치기반서비스이용약관</div>
-    </div>
-    <div class="numbers">
-        <div class="number">고객상담 1588-6200, 1544-6200</div>
-        <div class="number">어르신 전용 1800-1100</div>
-        <div class="number">해외 82-2-1588-6200</div>
-    </div>
-
-
+    </footer>
 </body>
 </html>
