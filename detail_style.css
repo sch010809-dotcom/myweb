@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(241, 241, 234);
+}
+a{
+    color: #111;
+    text-decoration: none;
+}
+/* header */
+.header {
+    width: 100%;
+    height: 80px;
+}
+.header-inner {
+    width: 100%;
+    height: 100%;
+    padding: 0 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* 메뉴 */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    height: 100%;
+}
+.nav-item {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-item > a {
+    font-size: 14px;
+    white-space: nowrap;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.sub-menu {
+    position: absolute;
+    left: 50%;
+    top: 63px;
+    width: 145px;
+    padding: 12px 0;
+    background-color: #999;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    /* 처음에는 숨김 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -8px);
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        visibility 0.2s ease;
+}
+.sub-menu a {
+    display: block;
+    padding: 9px 16px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+/* 마우스 오버 */
+.sub-menu {
+    position: absolute;
+    left: 0;
+    top: 63px;
+    width: 370px;
+    height: 190px;
+    padding: 15px 25px;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        visibility 0.2s ease;
+}
+.sub-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.sub-column a {
+    display: block;
+    padding: 7px 0;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #111;
+    white-space: nowrap;
+}
+.sub-column a:hover {
+    text-decoration: underline;
+}
+.nav-item:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+/* 회원가입 */
+.member-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.member-nav a {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* 상품정보 */
+.product-info {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 30px;
+}
+
+.book-cover {
+    width: 380px;
+    height: 500px;
+
+    overflow: hidden;
+}
+
+.book-cover img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+/* ========================================
+   구매 정보
+======================================== */
+
+.purchase-info {
+    width: 100%;
+}
+
+
+
+/* ========================================
+   정가
+======================================== */
+
+.original-price {
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #777;
+}
+
+.original-price p:first-child {
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.original-price p:last-child {
+    font-size: 12px;
+}
+
+
+
+/* ========================================
+   가격 정보
+======================================== */
+
+.price-info {
+    border-bottom: 1px solid #777;
+}
+
+.price-info ul,
+.order-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.price-info li {
+    min-height: 50px;
+
+    display: flex;
+    align-items: center;
+}
+
+.price-info li a:first-child {
+    width: 85px;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.price-info li a:nth-child(2) {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.price-info li:nth-child(2) {
+    min-height: 60px;
+}
+
+.price-info li:nth-child(2) a:nth-child(2) {
+    margin-right: 20px;
+
+    font-size: 10px;
+    font-weight: 400;
+}
+
+
+
+/* ========================================
+   배송 / 수령 / 수량
+======================================== */
+
+.order-info {
+    border-bottom: 1px solid #777;
+}
+
+.order-info li {
+    min-height: 55px;
+
+    display: flex;
+    align-items: center;
+}
+
+.order-info li a:first-child {
+    width: 85px;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.order-info li a:last-child {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+
+/* ========================================
+   구매 버튼
+======================================== */
+
+.purchase-buttons {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+
+    margin-top: 70px;
+}
+
+.purchase-buttons button {
+    height: 42px;
+
+    border: none;
+
+    background-color: #d8d8d8;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.purchase-buttons button:hover {
+    background-color: #ccc;
+}
+
+
+
+/* ========================================
+   추천 도서
+======================================== */
+
+.recommend-banner {
+    width: 1080px;
+
+    margin: 72px auto 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 38px;
+}
+
+.recommend-banner a {
+    height: 58px;
+
+    background-color: #d8d8d8;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+
+/* ========================================
+   책 상세 내용
+======================================== */
+
+.book-detail {
+    width: 1080px;
+
+    margin: 70px auto 0;
+
+    padding-bottom: 35px;
+
+    display: grid;
+
+    grid-template-columns: 95px 1fr;
+
+    border-bottom: 1px solid #888;
+}
+
+
+.book-detail h3 {
+    font-size: 16px;
+
+    font-weight: 700;
+}
+
+
+.book-detail p {
+    padding-right: 20px;
+
+    font-size: 11px;
+
+    line-height: 1.75;
+
+    white-space: pre-line;
+
+    word-break: keep-all;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    margin-top: 58px;
+    border-top: 1px solid #777;
+}
+
+.footer-inner {
+    width: 1080px;
+    height: 150px;
+    margin: 0 auto;
+    padding-top: 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact {
+    font-size: 14px;
+    line-height: 200%;
+}
+
+.footer-title {
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 38px;
+    padding-top: 2px;
+}
+.footer-nav a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
